@@ -12,8 +12,7 @@ const GodProfile = ({gods}) => {
 
   
   useEffect(() => {
-    // change ^^^ that line and grab the id from the URL
-    // You will NEED to add a dependency array to this effect hook
+
 
        axios
         .get(`http://localhost:4000/${id}`)
@@ -24,6 +23,8 @@ const GodProfile = ({gods}) => {
       
 
   },[id]);
+
+  
 
 
   if (!god) {

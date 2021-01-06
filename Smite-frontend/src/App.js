@@ -36,7 +36,7 @@ function App() {
   </Route>
 
   {/* <Route path = {`/${godId.Name}`.split(" ").join("")}> */}
-     <Route path = "/:id">
+     <Route path = "/:id" >
   <div>
 <GodProfile/>
 </div>

@@ -19,7 +19,7 @@ const GodCard = ({ gods, setGodId}) => {
 
 <NavLink to ={gods.Name.toLowerCase().split(" ").join("")}>
     <div className="GodContainer" onClick={handleClick}> 
-      <div>
+      <div className = "GodTextContainer">
 
         <h2 className="GodName">{gods.Name}</h2>
         <p className="GodName">{gods.Title}</p>

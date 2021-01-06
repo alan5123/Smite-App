@@ -13,7 +13,7 @@ export default function GodList({query, god, setGod, setGodId}) {
 
   useEffect(() => {
     
-    axios.get('http://localhost:4000')
+    axios.get('http://localhost:4000/gods')
       .then(response => {
         console.log(response.data);
         const characters = response.data.filter(character =>
@@ -22,31 +22,9 @@ export default function GodList({query, god, setGod, setGodId}) {
        
         setGod(characters);
       });
-    }, [query]);
+    }, [query, setGod]);
 
-  // useEffect(() => {
-    
-  //   api
-  //     .ping()
-  //     .then(response => {
-  //       console.log(response);
-        
-       
-        
-  //     });
-  //   }, [query]);
-  // useEffect (() => {
 
-  //   axios.get("https://rickandmortyapi.com/api/character")
-  //   .then(response => {
-  //       console.log(response);
-  //       const characters = response.data.results.filter(character =>
-  //         character.name.toLowerCase().includes(query.query.toLowerCase())
-  //       );
-       
-  //       setGod(characters);
-  //     });
-  //   }, [query]);
 
 
 
