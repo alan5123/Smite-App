@@ -1,0 +1,25 @@
+.GodName {
+    color: red
+}
+.GodContainer {
+    background-color: rgb(187, 187, 187);
+    width: 12rem;
+    height: 16rem;
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.GodMainDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.GodImg {
+    max-width: 128px;
+    max-height: 128px;
+}
