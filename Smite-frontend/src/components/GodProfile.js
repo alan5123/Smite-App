@@ -15,7 +15,7 @@ const GodProfile = ({gods}) => {
 
 
        axios
-        .get(`http://localhost:4000/${id}`)
+        .get(`http://localhost:4000/gods/${id}`)
         .then(response => {
         setGod(response.data)
           console.log(response.data);
@@ -44,8 +44,8 @@ return(
     <h2 className="GodName">{god.Name}</h2>
       <p className="GodName">{god.Title}</p>
       <div className = "GodProfileInfo">
-          <div><p>{god.Roles}</p></div>
-          <div><p>{god.Pros}</p></div>
+          <div className="GodName"><p>Role: {god.Roles}</p></div>
+          <div className="GodName"><p>Pros: {god.Pros}</p></div>
       </div>
     </div>
 
